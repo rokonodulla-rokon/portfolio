@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Rokonodulla Rokon">
+    <meta name="keywords" content="Portfolio, Rokonodulla Rokon, HTML">
+    <meta name="description" content="Rokonodulla Rokon is a Software Developer">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--google front link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(227, 220, 233);
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>        
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h1>Rokonodulla Rokon</h1>
+    <p>
+       <em>Web Developer & Computer Seience Student.</em>
+    </p>
+    <a target="_blank" href="https://github.com/rokonodulla-rokon/fortfolio-html"><img src="./images/rokon.jpg" alt="Rokonodulla Rokon" height="150"></a>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p><b>Experience:</b> <mark>5 Years</mark> experience in web development </p>
+            <p><b>Education:</b> BSc in Computer Science and Engineering</p>
+        </section>
+        <!--<video width="320" controls>
+            <source src="./assets/video/html.mp4" type="video/mp4">
+            your browser do not support this type of video.
+        </video>-->
+        <section id="skills">
+          
+            <H2>Skills</H2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>SL. No.</th>
+                        <th>Technology</th>
+                        <th>Proficiency</th>
+                        
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>HTML</td>
+                        <td rowspan="2">Expert</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>CSS</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>JavaScript</td>
+                        <td>Intermediate</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>React.js</d>
+                        <td>Expert</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>Angular.js</td>
+                        <td>Expert</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>Node.js</td>
+                        <td>Expert</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>Express.js</td>
+                        <td>Expert</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>MongoDB</td>
+                        <td>Expert</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>TypeScript</td>
+                        <td>Expert</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>Skills Progress</h3>
+            <div>
+                <label for="htmlprogress">HTML:</label>
+                <progress id="htmlprogress" value="90" max="100">90%</progress>
+            </div>
+            <div>
+                <label for="cssprogress">CSS:</label>
+                <progress id="cssprogress" value="60" max="100">60%</progress>
+            </div>
+            <div>
+                <label for="jsprogress">JavaScript:</label>
+                <progress id="jsprogress" value="50" max="100">50%</progress>
+            </div>
+        </section>
+        <section>
+            <h3>Experience Label</h3>
+            <label for="experienceLabel">5 Years Experience</label>
+            <meter id="experienceLabel" min="0" max="10" value="5">5 Years Experience</meter>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/rokonodulla-rokon/fortfolio-html">Portfolio Website</a>
+                </li>
+                <li>Blog Website</li>
+                <li>E-commerce Website</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <form  action="https://formspree.io/f/mrbpygdr"
+            method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required/>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required/>
+                </div>
+                <div>
+                    <label for="phone">Phone No.:</label>
+                <input type="phone" id="phone" name="phone" required />
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="18" max="55" required>
+                </div>
+                <div>
+                    <label for="website">Website: </label>
+                    <input type="url" id="website" name="website" pattern="https?://.+">
+                </div>
+                <div>
+                    <label for="image">Upload your Image</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject" required>
+                        <option value="inquiry">Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="job">Job Opportunity</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="massage">Massage Me:</label>
+                <textarea name="massage" id="massage" cols="20" rows="10"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright reserved by &copy; Rokonodulla Rokon</p>
+        <a href="tel:01737322378">Call Me</a>
+        <a href="mailto:rokon.pmg@gmail.com">Email Me</a>
+        <h3>
+            Follow Me
+        </h3>
+        <div>
+            <ul>
+                <li>
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook"></i>
+                        Visit my Facebook Profile
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i>
+                        Visit my Linkedin Profile
+                    </a>
+                    
+                </li>
+            </ul>
+        </div>
+       
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d908.7983082279723!2d90.42946645530024!3d23.780217826117532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7935e1d9031%3A0xf1dc98ead0748f36!2sQCJJ%2B34J%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1743667386692!5m2!1sen!2sbd"
+            title="Home Address"
+            width="300" 
+            height="150"
+            style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> 
+       
+    </footer>    
+</body>
+</html>
